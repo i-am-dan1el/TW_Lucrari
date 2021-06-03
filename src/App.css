@@ -1,8 +1,11 @@
 @import '~antd/dist/antd.css';
 
+
 .App {
   text-align: center;
+  background: #917d20;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -15,8 +18,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-header > BrowserRouter {
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,6 +27,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.ant-layout-header{
+  background: #000000;
+}
+
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
+   background: #000000;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover{
+  background: #737373;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+  background: #737373;
 }
 
 .App-link {
@@ -42,14 +60,22 @@
 .site-layout-content {
   min-height: 280px;
   padding: 24px;
-  background: #fff;
+  background: #737373;
+  margin-left: 23%;
 }
-#components-layout-demo-top .logo {
+.ant-layout,.ant-layout-footer{
+  background: #737373;
+}
+
+.site-layout-content > .ant-image{
+  padding: 15px;
+}
+#components-layout-demo-top{
   float: left;
   width: 120px;
   height: 31px;
   margin: 16px 24px 16px 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: #917d20;;
 }
 .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
